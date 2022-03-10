@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+body {
+    background: white;
+}
+/* Cabecera */
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #594ebc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(42, 6, 249, 0.623), hsla(177, 82%, 52%, 0.698)), url(images/medine.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(59, 6, 249, 0.65), hsla(180, 91%, 55%, 0.671)), url(images/medine.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+header .texto-cabecera{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.texto-cabecera h1{
+    font-size: 100px;
+    color: white;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#content img {
+    padding: 20px;
+    display: block;
+    width: 80%;
+}
+/*Primera página*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #594ebc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(150, 5, 175, 0.623), hsla(308, 76%, 58%, 0.698)), url();  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(150, 5, 175, 0.623), hsla(308, 76%, 58%, 0.698)), url(); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card >.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    font-size: 50px;
+}
+.grafica .contenido-texto-card h4{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    font-size: 0px;
+}
+nav {
+    float: center;
+    text-align: center;
+    padding: 0 0 50px 30px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+nav ul li {
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0px;
+}
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+nav ul li a:hover {
+    background: #191970;
+
+}
+.pie {
+    background: #594ebc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(42, 6, 249, 0.623), hsla(177, 82%, 52%, 0.698)), url(images/medine.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(59, 6, 249, 0.65), hsla(180, 91%, 55%, 0.671)), url(images/medine.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.graficasprint{
+    width: 100%;
+    height: 600px;
+}
+.grafica{
+    background: white;
+}
+/* Segunda pagina */
+.portafolio-dev{
+    background: #f2f2f2;
+}
+.portafolio-qa{
+    background: rgb(220, 244, 245);
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5) ;
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria a{
+    text-decoration: none;
+}
+.hover-galeria img{
+    display: block;
+    margin: auto;
+    width: 80px;
+}
+.hover-galeria p{
+    color: white;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/* Modal */
+.modal__container{
+    margin: auto;
+    background:#fff;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 51, 51, 0.829);
+    display: flex;
+
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+
+}
+.modal__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.modal__title--bold{
+    font-weight: 700;
+}
+.modal__close{
+    display: inline-block;
+    border: 1px solid;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: .4em;
+}
+.modal__close:hover{
+    background: blue;
+    color: white;
+}
+.modal:target{
+    --opacity: 1;
+    --pointer: unset;
+}
+.modal__picture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+.modal__img{
+    width: 100%;
+    display: block;
+    border-radius: 1em;
+}
+.modal__paragraph{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    text-align: center;
+}
